@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de IMC</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/sweet_alert.js"></script>
+</head>
+
+<body class="body">
+
+    <section class="container">
+        <form action="/" id="formulario" method="POST">
+            <h1>Calcule o seu IMC</h1>
+
+            <Label>
+                <h3>
+                    Altura
+                </h3>
+            </Label>
+
+            <input type="text" maxlength="4" placeholder="Digite a sua altura (ex: 1,70)" name="altura" id="altura">
+
+            <label>
+                <h3>
+                    Peso:
+                </h3>
+
+            </label>
+
+            <input type="text" maxlength=50 placeholder="Digite o seu peso (ex: 69,2)" name="peso" id="peso">
+
+            <div class="table">
+                <p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IMC</th>
+                            <th>Classificação</th>
+                            <th>Grau</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Entre 18,5 e 24,9</td>
+                            <td>Normal</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Entre 25,0 e 29,9</td>
+                            <td>Sobrepeso</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>Entre 30,0 e 39,9</td>
+                            <td>Obesidade</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>Maior que 40,0</td>
+                            <td>Grave</td>
+                            <td>III</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            
+            <button class="button" type="submit" id="enviar"> Enviar</button>
+
+            </p>
+
+        </form>
+
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
